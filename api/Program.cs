@@ -3,6 +3,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddSignalR();
+app.MapHub<AppHub>("/api");
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
