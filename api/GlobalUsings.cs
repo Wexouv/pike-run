@@ -1,1 +1,1 @@
-global using SignalR;
+global using Microsoft.AspNetCore.SignalR;
