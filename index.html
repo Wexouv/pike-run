@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        width: 100%;
+        height: 100%;
+      }
+      .object {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        border-radius: 50%;
+      }
+      .btn {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none;
+      }
+      .btn-group {
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn-group">
+        <div class="up btn">&#129045;</div>
+        <div class="down btn">&#129047;</div>
+        <div class="left btn">&#129044;</div>
+        <div class="right btn">&#10140;</div>
+      </div>
+      <div class="object" style="top: 0px; left: 0px"></div>
+    </div>
+    <script src="move.js"></script>
+  </body>
+</html>
